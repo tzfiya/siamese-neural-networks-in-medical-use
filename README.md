@@ -3,11 +3,19 @@
 Siamese Neural Network (SNN) is an architecture based on CNN and designed to recognize images. How?
 The model is actually built from 2 identical CNN networks, each of which receives an image. After processing the image in each network, the networks are connected and merged into a network that measures the 'distances' between the two images, that is, how much the images are the same/different. 
 
+**datasets**
+we built snn models for 4 familiar datasets:
+-MNIST
+-cat-dogs
+-brain-tumor
+-chest-x-rest
+
 **There is a special loss function for SNN - contrastive loss, and it is actually the one that measures the distances.**
-<img width="501" alt="‏‏לכידה" src="https://github.com/user-attachments/assets/a34f88cc-899f-4277-aff0-6382418200cb" />
+![image](https://github.com/user-attachments/assets/f5ab5eec-8a14-4e1a-9da7-d966023a6b77)
 
 For example, if we enter two images of a dog - we expect to see a small distance. If we enter one image of a dog and one of a cat - we expect to see a larger distance.
 this are pairs of pictures with labels:
+
 ![image](https://github.com/user-attachments/assets/d40e1cd9-e8fb-48c9-8ac2-f66da851e45f)
 
 In addition, already during training we expect to see the learning process of the network expressed in the fact that the distances between identical images are small (= called: positive distance) and the distances between different images increase (= called: negative distance).
@@ -21,7 +29,8 @@ we use a pre-trained model and performed transfer-learning to adjust it to our n
 
 We ran CNN against the SNN network to test the effectiveness of the siamese network and came to the conclusion: A siamese network is particularly effective for small medical data, because it is classified by creating random pairs and calculating the distances between them. The random pairs created in each epoch significantly increase our data, and thus the network can learn better and produce good results even on complicated data.
 Compared to CNN, which classifies data differently, not by pairs, and therefore gives less good results on small data sets.
+![image](https://github.com/user-attachments/assets/38c259c9-f8cb-47bc-809a-e465499446fe)
 
-**The result**
+
 
 
