@@ -1,4 +1,4 @@
-**about our project:**
+**About our project:**
 
 Siamese Neural Network (SNN) is an architecture based on CNN and designed to recognize images. How?
 The model is actually built from 2 identical CNN networks, each of which receives an image. After processing the image in each network, the networks are connected and merged into a network that measures the 'distances' between the two images, that is, how much the images are the same/different. 
@@ -18,7 +18,10 @@ The uniqueness of the Siamese network is that it does not test a single image. I
 we use a pre-trained model and performed transfer-learning to adjust it to our needs(we used DeneNet121).
 
 **SNN advantage over CNN**
+
 We ran CNN against the SNN network to test the effectiveness of the siamese network and came to the conclusion: A siamese network is particularly effective for small medical data, because it is classified by creating random pairs and calculating the distances between them. The random pairs created in each epoch significantly increase our data, and thus the network can learn better and produce good results even on complicated data.
 Compared to CNN, which classifies data differently, not by pairs, and therefore gives less good results on small data sets.
+
 **The rusult**
+
 
