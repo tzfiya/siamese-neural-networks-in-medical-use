@@ -22,6 +22,6 @@ we use a pre-trained model and performed transfer-learning to adjust it to our n
 We ran CNN against the SNN network to test the effectiveness of the siamese network and came to the conclusion: A siamese network is particularly effective for small medical data, because it is classified by creating random pairs and calculating the distances between them. The random pairs created in each epoch significantly increase our data, and thus the network can learn better and produce good results even on complicated data.
 Compared to CNN, which classifies data differently, not by pairs, and therefore gives less good results on small data sets.
 
-**The rusult**
+**The result**
 
 
