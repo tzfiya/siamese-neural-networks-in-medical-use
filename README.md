@@ -1,4 +1,4 @@
-**About our project:**
+**Siamese network for image classification:**
 
 Siamese Neural Network (SNN) is an architecture based on CNN and designed to recognize images. How?
 The model is actually built from 2 identical CNN networks, each of which receives an image. After processing the image in each network, the networks are connected and merged into a network that measures the 'distances' between the two images, that is, how much the images are the same/different. 
