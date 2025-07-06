@@ -12,7 +12,7 @@ If the input images are similar (e.g., two images of the digit '3' or two dog ph
 
 This approach makes the Siamese network especially effective in cases where the goal is to determine whether two inputs are from the same class, rather than classifying an image into a fixed set of categories.
 
-**Datasets Used**
+**Datasets**
 
 We applied our SNN model on four well-known datasets:
 
