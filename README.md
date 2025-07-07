@@ -16,13 +16,13 @@ This approach makes the Siamese network especially effective in cases where the 
 
 We applied our SNN model on four well-known datasets:
 
-MNIST – Handwritten digits
+1. MNIST – Handwritten digits
 
-Cats vs. Dogs
+2. Cats vs. Dogs
 
-Brain Tumor MRI
+3. Brain Tumor MRI
 
-Chest X-Ray Pneumonia Detection
+4. Chest X-Ray Pneumonia Detection
 
 **Training the Model**
  
@@ -47,7 +47,8 @@ we use a pre-trained model and performed transfer-learning to adjust it to our n
 
 **SNN advantage over CNN**
 
-<img src="https://github.com/user-attachments/assets/c0286cb2-5b08-4a08-a04b-460448c51129" alt="example" width="300">
+<img src="https://github.com/user-attachments/assets/2a22a42d-795e-421e-bd4a-4843da4caae8" alt="example" width="400">
+
 
 We ran CNN against the SNN network to test the effectiveness of the siamese network and came to the conclusion: A siamese network is particularly effective for small medical data, because it is classified by creating random pairs and calculating the distances between them. The random pairs created in each epoch significantly increase our data, and thus the network can learn better and produce good results even on complicated data.
 Compared to CNN, which classifies data differently, not by pairs, and therefore gives less good results on small data sets.
